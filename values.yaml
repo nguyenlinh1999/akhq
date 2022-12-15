@@ -5,6 +5,10 @@ image:
   tag: "" # uses Chart.AppVersion by default
 
 # custom annotations (example: for prometheus)
+hostAliases:
+  - ip: "127.0.0.1"
+    hostnames:
+    - "foo.local"
 annotations: {}
   #prometheus.io/scrape: 'true'
   #prometheus.io/port: '8080'
